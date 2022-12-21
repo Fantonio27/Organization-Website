@@ -1,0 +1,193 @@
+<style type="text/css">
+			.parent{
+				margin: 0 ;
+				max-width: 100%;
+				display: grid;
+				grid-gap: 0px;
+				grid-template-columns: repeat(12,1fr);
+				grid-auto-rows: minmax(50px,auto);
+				background-color: black;
+			}
+			
+			.parent>div{
+				padding: 0px;
+			}
+
+			.nav{
+				width: 100%;
+				height: 20px;
+				background-color: #FFD36E;
+				z-index: 100;
+			}
+			.navi{
+				grid-column: 1/13;
+				grid-row: 1/4;
+				background-color: white;
+				border-bottom: 1px solid lightgray;
+			}
+
+			.header{
+				grid-column: 1/13;
+				grid-row: 4/38;
+				background-color: #FAFAFA;
+				text-align: left;	
+				
+			}
+
+			.footer{
+				grid-column: 1/13;
+				grid-row: 38/39;
+				background-color: #FFD36E;
+				text-align: center;	
+				font-size: 18px;
+			}
+
+			
+			.p1{
+				color: #FFD36E;
+				font-family: Arial;
+				font-size: 70px;		
+				margin-left: 225px;
+				animation-name: header;
+ 				animation-duration: 2s;
+  				animation-delay: 0s;
+			}
+
+			.p2{
+				color: #062C30;
+				font-family: Arial;
+				font-size: 30px;
+				margin: 140px 0px 0px 0px;	
+				animation-name: text;
+ 				animation-duration: 3s;
+  				animation-delay: 0s;
+			}
+
+			.p3{
+				color: #062C30;
+				font-family: Trebuchet MS;
+				font-size: 24px;
+				position: absolute;
+				margin-top: 42px;
+				opacity: 0.7;
+				float: left;
+				padding: 10px;
+				border: 2px solid white;
+				animation-name: fade;
+ 				animation-duration: 1s;
+  				animation-delay: 0s;
+  				transition: 0.5s;
+			}
+
+			.p4{
+				color: #FFC107;
+				font-family: Arial;
+				font-size: 18px;
+				margin: 0px 0px 0px 0px;	
+				animation-name: text;
+ 				animation-duration: 3s;
+  				animation-delay: 0s;
+			}
+
+			.p5{
+				color: #062C30;
+				font-family: Arial;
+				font-size: 21px;
+				margin: 0px 0px 0px 0px;	
+				animation-name: text;
+ 				animation-duration: 3s;
+  				animation-delay: 0s;
+			}
+
+
+			.logo{
+				width: 8%;
+				height: 100px;
+				object-fit: cover;
+				margin: 15px 0px 0px 100px;
+				float: left;
+			}
+
+			a{
+				text-decoration: none;
+			}
+
+			.p3:hover{		
+				opacity: 0.9;
+				border-bottom: 2px solid #FFD36E;
+			}
+
+			@keyframes fade{
+			  0%   {margin-top: 10px; opacity: 0.2;}
+			  100% {margin-top: 42px; opacity: 0.7;}
+			}
+
+			@keyframes header{
+			  0%   {margin-top: 100px; opacity: 0.2;}
+			  100% {margin-top: 70px; opacity: 1.0;}
+			}
+
+			@keyframes text{
+			  0%   {opacity: 20%;}
+			  100% {opacity: 100%;}
+			}
+
+
+			.box1, .box2 , .box3 , .box4{
+				width: 430px;
+				height: 450px;
+				background-color: white;
+				border:  2px solid #FFD36E;		
+				float: left;
+				position: absolute;
+				text-align: center;
+			}
+
+
+			.box1{
+				margin: 190px 0px 0px 230px;
+			}
+
+			.box2{
+				margin: 190px 0px 0px 740px;
+			}
+			.box3{
+				margin: 190px 0px 0px 1250px;
+			}
+			.box4{
+				margin: 850px 0px 0px 230px;
+			}
+
+			.pic, .pic2 , .pic3, .pic4{
+				position: absolute;
+				margin: 270px 0px 0px 208px;
+				border: 1px solid white;
+				border-radius: 200px;
+				z-index: 200;
+			}
+
+			.pic{
+				margin:280px 0px 0px 320px;
+			}
+
+
+			.pic2{
+				margin: 280px 0px 0px 830px;
+			}
+
+			.pic3{
+				margin: 280px 0px 0px 1340px;
+			}
+
+			.pic4{
+				margin: 940px 0px 0px 320px;
+			}
+
+			hr{
+				position: absolute;
+				width: 75%;
+				opacity: 0.5;
+				color: whitesmoke;
+				margin: 190px 0px 0px 225px;
+			}
+		</style>
